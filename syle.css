@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right,#1f3453, #7ec7e4); /* Very light blue to a soft green */
+
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2{
+    margin: 20px 0;
+  }
+
+  .player-names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  input{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    width: 200px;
+  }
+
+  input[type="color"]{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(129deg,lightblue , yellowgreen);
+    border: 2px solid rgb(3, 3, 78);
+    border-radius: 30%;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  button #reset{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+   
+  }
+  
